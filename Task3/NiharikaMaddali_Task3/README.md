@@ -153,8 +153,8 @@ This project is submitted as part of the **Oasis Infobyte Data Analytics Interns
 | Platform | Link |
 |---|---|
 | **GitHub** | [github.com/maddali23](https://github.com/maddali23) |
-| **LinkedIn** | Add your LinkedIn URL here |
-| **Email** | Add your email here |
+| **LinkedIn** | https://www.linkedin.com/in/naga-durga-niharika-maddali-41581634a/ |
+| **Email** | niharikamaddali@gmail.com |
 
 ---
 
