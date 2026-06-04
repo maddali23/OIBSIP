@@ -1,173 +1,140 @@
-# 🧹 Data Cleaning — Project 3 | Level 1
-### Oasis Infobyte Data Analytics Internship
+# 🧹 Task 3 — Data Cleaning
+### Oasis Infobyte | Data Analytics Internship | Level 1
+
+![Task](https://img.shields.io/badge/Task-3-purple?style=for-the-badge)
+![Level](https://img.shields.io/badge/Level-1-pink?style=for-the-badge)
+![Domain](https://img.shields.io/badge/Domain-Data%20Analytics-blueviolet?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
 ---
 
 ## 👩‍💻 Intern Details
 
 | Field | Details |
-|---|---|
-| **Name** | Niharika Maddali |
-| **GitHub Username** | maddali23 |
-| **Internship Program** | Oasis Infobyte — Data Analytics |
-| **Level** | Level 1 |
-| **Project** | Project 3 — Data Cleaning |
-| **Batch** | May–June 2026 |
+|-------|---------|
+| **Name** | Maddali Naga Durga Niharika |
+| **College** | Vasireddy Venkatadri Institute of Technology (VVIT) |
+| **Internship ID** | OIB/A2/IP5267 |
+| **Organization** | Oasis Infobyte |
+| **Domain** | Data Analytics |
+| **GitHub** | [maddali23/OIBSIP](https://github.com/maddali23/OIBSIP) |
 
 ---
 
 ## 📌 Project Overview
 
-Data cleaning is the process of fixing or removing incorrect, corrupted, duplicate, or incomplete data within a dataset. Messy data leads to unreliable outcomes. This project demonstrates essential data cleaning skills using two real-world datasets.
+| Field | Details |
+|-------|---------|
+| **Project Title** | Data Cleaning on Real-World Datasets |
+| **Level** | Level 1 — Task 3 |
+| **Dataset 1** | New York City Airbnb Open Data (Kaggle) |
+| **Dataset 2** | Trending YouTube Video Statistics (Kaggle) |
+| **Tools Used** | Python, Pandas, NumPy, Matplotlib, Seaborn |
+| **Platform** | Google Colab |
+
+---
+
+## 🎯 Objective
+
+Data cleaning is the process of fixing or removing incorrect, corrupted, duplicate, or incomplete data within a dataset. Messy data leads to unreliable outcomes. The goal of this project is to clean and preprocess two real-world datasets by:
+
+- Handling missing values
+- Removing duplicate records
+- Standardizing data formats
+- Detecting and analyzing outliers
 
 ---
 
 ## 📂 Datasets Used
 
-### Dataset 1 — New York City Airbnb Open Data
-- **Source:** Kaggle
-- **Description:** Contains information about Airbnb listings in New York City including host details, location, price, and reviews.
-- **File:** `AB_NYC_2019.csv`
-
-### Dataset 2 — Trending YouTube Video Statistics
-- **Source:** Kaggle
-- **Description:** Daily statistics for trending YouTube videos across multiple countries including views, likes, dislikes, and category information.
-- **File:** `USvideos.csv`
+| # | Dataset | Source | Size |
+|---|---------|--------|------|
+| 1 | New York City Airbnb Open Data | [Kaggle](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data) | ~48,895 rows |
+| 2 | Trending YouTube Video Statistics | [Kaggle](https://www.kaggle.com/datasets/datasnaek/youtube-new) | ~40,949 rows |
 
 ---
 
-## 🛠️ Technologies Used
+## 🪜 Steps Performed
 
-| Tool | Purpose |
-|---|---|
-| Python 3 | Programming Language |
-| Pandas | Data Manipulation |
-| NumPy | Numerical Operations |
-| Matplotlib | Data Visualization |
-| Seaborn | Statistical Visualization |
-| Google Colab | Development Environment |
+| Step | Task | Description |
+|------|------|-------------|
+| 1️⃣ | **Data Loading** | Loaded both datasets into Pandas DataFrames using Google Colab |
+| 2️⃣ | **Data Exploration** | Checked shape, data types, missing values, and duplicate rows |
+| 3️⃣ | **Missing Value Handling** | Filled null values with appropriate defaults (Unknown, 0, No Review, No Description) |
+| 4️⃣ | **Duplicate Removal** | Identified and removed duplicate records using `drop_duplicates()` |
+| 5️⃣ | **Standardization** | Standardized text columns using `.str.strip()`, `.str.lower()`, `.str.title()` |
+| 6️⃣ | **Data Type Fixing** | Converted date columns to datetime and numeric columns to proper types |
+| 7️⃣ | **Outlier Detection** | Visualized outliers using Boxplots for price, nights, views, and likes |
+| 8️⃣ | **Saving Results** | Saved cleaned datasets as new CSV files |
 
 ---
 
 ## 🔑 Key Concepts Covered
 
-### 1. Data Integrity
-Ensuring the accuracy, consistency, and reliability of data throughout the cleaning process.
-
-### 2. Missing Data Handling
-Dealing with missing values by either imputing them or making informed decisions on how to handle gaps in the dataset.
-
-### 3. Duplicate Removal
-Identifying and eliminating duplicate records to maintain data uniqueness.
-
-### 4. Standardization
-Consistent formatting and units across the dataset for accurate analysis.
-
-### 5. Outlier Detection
-Identifying and addressing outliers that may skew analysis or model performance using IQR method.
+| # | Concept | What I Did |
+|---|---------|------------|
+| 1 | **Data Integrity** | Ensured accuracy and consistency throughout the cleaning process |
+| 2 | **Missing Data Handling** | Used `fillna()` to impute missing values intelligently |
+| 3 | **Duplicate Removal** | Used `drop_duplicates()` to maintain data uniqueness |
+| 4 | **Standardization** | Applied consistent formatting across text and date columns |
+| 5 | **Outlier Detection** | Used Seaborn Boxplots to identify abnormal values visually |
 
 ---
 
-## 📊 Steps Performed
+## 📊 Cleaning Summary
 
-```
-1. Imported necessary libraries
-2. Loaded both datasets
-3. Explored data using shape, info, describe
-4. Identified and handled missing values
-5. Removed duplicate records
-6. Detected and removed outliers using IQR method
-7. Standardized column names
-8. Visualized cleaned data
-9. Saved cleaned datasets
-10. Generated final summary report
-```
+| Dataset | Original Rows | After Cleaning | Duplicates Removed | Missing Values Fixed |
+|---------|--------------|----------------|--------------------|---------------------|
+| NYC Airbnb | 48,895 | 48,895 | ✅ | ✅ |
+| YouTube Trending | 40,949 | 40,949 | ✅ | ✅ |
 
 ---
 
-## 📈 Visualizations
+## 📈 Outlier Detection Results
 
-- 📦 Box plot — Price outliers (Airbnb dataset)
-- 📊 Count plot — Room type distribution (Airbnb dataset)
-- 📊 Count plot — YouTube video category distribution
-- 📉 Histogram — Price distribution after cleaning
-- 📉 Histogram — YouTube views distribution
+Boxplot analysis was performed on the following columns:
 
----
-
-## 📁 Project Structure
-
-```
-OIBSIP/
-└── Task3/
-    ├── NiharikaMaddali_Task3.ipynb   ← Main notebook
-    └── README.md                      ← Project documentation
-```
+| Dataset | Column | Observation |
+|---------|--------|-------------|
+| Airbnb | Price | High-priced listings ($1000+) detected as outliers |
+| Airbnb | Minimum Nights | Some listings required 1000+ nights — extreme outliers |
+| YouTube | Views | Viral videos with billion+ views detected as outliers |
+| YouTube | Likes | Few videos with extremely high likes — positive outliers |
 
 ---
 
-## ▶️ How to Run
+## 🧠 What I Learned
 
-1. Clone the repository:
-```bash
-git clone https://github.com/maddali23/OIBSIP.git
-```
-
-2. Navigate to Task3 folder:
-```bash
-cd OIBSIP/Task3
-```
-
-3. Open the notebook:
-```bash
-jupyter notebook NiharikaMaddali_Task3.ipynb
-```
-
-4. Download datasets from Kaggle:
-   - [NYC Airbnb Dataset](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data)
-   - [YouTube Trending Videos](https://www.kaggle.com/datasets/datasnaek/youtube-new)
-
-5. Run all cells in order.
+- Real-world datasets are always messy — cleaning is the **most critical step** before analysis
+- Missing values must be handled carefully based on column type (numeric vs text)
+- `drop_duplicates()` helps maintain **data uniqueness** and prevents skewed results
+- Standardizing text columns ensures **consistency** across the dataset
+- **Boxplots** are the most effective way to visually identify outliers
+- Working with large datasets (40K+ rows) requires efficient Pandas operations
+- Google Colab is a powerful cloud-based environment for data analysis
 
 ---
 
-## 🎯 Learning Outcomes
+## 🛠️ Tech Stack
 
-- ✅ Hands-on experience with real-world messy datasets
-- ✅ Data cleaning and preprocessing techniques
-- ✅ Handling missing values and duplicates
-- ✅ Outlier detection and removal using IQR method
-- ✅ Data standardization and formatting
-- ✅ Visualization of cleaned data
-
----
-
-## ⚠️ Disclaimer
-
-This project is submitted as part of the **Oasis Infobyte Data Analytics Internship Program**. All datasets used are publicly available on Kaggle under open licenses. This project is strictly for educational and learning purposes only. Plagiarism is strictly prohibited as per Oasis Infobyte internship guidelines. All code and analysis in this project is original work by the intern.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-4c72b0?style=for-the-badge)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
 
 ---
 
-## 📬 Contact
+## 🔗 Links
 
-| Platform | Link |
-|---|---|
-| **GitHub** | [github.com/maddali23](https://github.com/maddali23) |
-| **LinkedIn** | https://www.linkedin.com/in/naga-durga-niharika-maddali-41581634a/ |
-| **Email** | niharikamaddali@gmail.com |
+| Resource | Link |
+|----------|------|
+| 📓 Project Notebook | [NiharikaMaddali_Task3.ipynb](https://github.com/maddali23/OIBSIP/tree/main/Task3/NiharikaMaddali_Task3) |
+| 🐙 GitHub Repository | [maddali23/OIBSIP](https://github.com/maddali23/OIBSIP) |
+| 🎥 Demo Video | [Add your LinkedIn post link here](#) |
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Internship-Oasis%20Infobyte-gold" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Domain-Data%20Analytics-blue" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Level-1-orange" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen" />
-</p>
-
-<p align="center">
-  © 2026 <strong>Niharika Maddali</strong> &nbsp;|&nbsp; Oasis Infobyte Data Analytics Internship &nbsp;|&nbsp; All Rights Reserved
-</p>
+*Task 3 — Data Cleaning | Oasis Infobyte Data Analytics Internship*
+*Intern: Maddali Naga Durga Niharika | VVIT | May 2026*
