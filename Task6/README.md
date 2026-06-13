@@ -149,7 +149,7 @@ is to build and compare three classification models by:
 | Resource | Link |
 |----------|------|
 | 📓 Project Notebook | [NiharikaMaddali_Task6.ipynb](https://github.com/maddali23/OIBSIP/tree/main/Task6) |
-| 🐙 GitHub Repository | [maddali23/OIBSIP](https://github.com/maddali23/OIBSIP) |
+| 🐙 GitHub Repository | [maddali23/OIBSIP](https://github.com/maddali23/OIBSIP/blob/main/Task6) |
 | 🎥 Demo Video | [Add your LinkedIn post link here](#) |
 
 ---
