@@ -1,7 +1,7 @@
 # 🍷 Task 6 — Wine Quality Prediction
 ### Oasis Infobyte | Data Analytics Internship | Level 2
 
-![Task](https://img.shields.io/badge/Task-5-purple?style=for-the-badge)
+![Task](https://img.shields.io/badge/Task-6-purple?style=for-the-badge)
 ![Level](https://img.shields.io/badge/Level-2-pink?style=for-the-badge)
 ![Domain](https://img.shields.io/badge/Domain-Data%20Analytics-blueviolet?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
